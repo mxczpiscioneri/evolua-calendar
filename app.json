@@ -1,0 +1,6 @@
+{
+  "name": "Calendar Evolua",
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ]
+}

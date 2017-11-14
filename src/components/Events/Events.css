@@ -1,0 +1,16 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-body tr:hover {
+  background: #F8F8F8;
+}
+
+.table-body tr:hover i.remove {
+  visibility: visible;
+}
+
+.table-body tr td {
+  border-bottom: 1px solid #E8E8E8;
+}
