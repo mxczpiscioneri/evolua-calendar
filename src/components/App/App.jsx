@@ -1,24 +1,17 @@
-import React, { Component } from "react";
-import classNames from "classnames";
-import Header from "../../Header/Header";
-import NewEvent from "../NewEvent/NewEvent";
-import Events from "../Events/Events";
-import styles from "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import Calendar from "../Calendar/Calendar";
+import Login from "../Login/Login";
+import "./App.css";
 
-class App extends Component {
-  state = {};
-
-  render() {
-    return (
-      <div className="grid-container">
-        <Header />
-        <div className={classNames("grid-row padding-md", styles.content)}>
-          <NewEvent />
-          <Events />
-        </div>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <div>
+      <Route exact path="/" render={() => (<Redirect to="/login" />)} />
+      <Route path="/login" component={Login} />
+      <Route path="/calendar" component={Calendar} />
+    </div>
+  </Router>
+);
 
 export default App;

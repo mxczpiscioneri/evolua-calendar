@@ -2,7 +2,7 @@
 @import '../../css/acsset.css';
 
 body {
-  margin-top: 3.75em;
+  margin: 3.75em 0;
   background: url(./background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,6 +11,6 @@ body {
   background-size: cover;
 }
 
-:local(.content) {
+.content {
   background-color: rgba(255, 255, 255, 0.96);
 }
